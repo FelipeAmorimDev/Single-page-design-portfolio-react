@@ -1,26 +1,18 @@
-import Button from "../Button/Button";
-
 import styleF from "../_fonts.module.scss";
 import style from "./Header.module.scss";
 
-import logo from "../../assets/logo.svg";
 import graphicDesigner from "../../assets/pattern-graphic-design.svg";
 import uiUx from "../../assets/pattern-ui-ux.svg";
 import appImg from "../../assets/pattern-apps.svg";
 import photography from "../../assets/pattern-photography.svg";
 import ilustrations from "../../assets/pattern-illustrations.svg";
 import motionGraphics from "../../assets/pattern-motion-graphics.svg";
-
+import HeaderTop from "./HeaderTop";
 
 const Header = () => {
   return (
     <header className={style.HeaderContainer}>
-      <div className={style.HeaderTop}>
-        <a href="/">
-          <img src={logo} alt="Logo" />
-        </a>
-        <Button value="Free Consultation" classN="ButtonPrimary" />
-      </div>
+      <HeaderTop />
       <div className={style.HeaderDescription}>
         <h1 className={styleF.fontL}>Design solutions made easy</h1>
         <p className={styleF.fontB}>
