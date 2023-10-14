@@ -1,0 +1,39 @@
+@import '../_variables.scss';
+
+.ButtonPrimary{
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.75;
+  padding: 14px 45px;
+  background-color: $color-7;
+  color: $color-9;
+  border-radius: 28px;
+  border: 0;
+  transition: .3s;
+  &:hover{
+    background-color: $color-1;
+  }
+  @media(max-width:420px){
+    font-size: 14px;
+  }
+}
+
+.ButtonSecondary{
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.75;
+  padding: 14px 45px;
+  background-color: $color-4;
+  color: $color-9;
+  border-radius: 28px;
+  border: 0;
+  transition: .3s;
+  &:hover{
+    background-color: $color-2;
+  }
+  @media(max-width:420px){
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,42 @@
+@import './variables';
+
+.fontL{
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: $size-l;
+  line-height: 1.25;
+  font-weight: 700;
+
+  @media (max-width:1000px){
+    font-size: 44px;
+    line-height: initial;
+  }
+  @media (max-width:650px){
+    font-size: 36px;
+    line-height: initial;
+  }
+}
+
+.fontM{
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: $size-m;
+  line-height: 1.257;
+  font-weight: 700;
+}
+
+.fontS{
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: $size-s;
+  line-height: 1.25;
+  font-weight: 700;
+}
+
+.fontB{
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: $size-b;
+  line-height: 1.555;
+
+  @media(max-width:600px){
+    font-size: 16px;
+    line-height: 1.662;
+  }
+}
