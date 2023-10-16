@@ -17,11 +17,6 @@
   margin-bottom: 66px;
   @media(max-width: 420px){
     margin-bottom: 32px;
-
-    img{
-      width: 48px;
-      height: 48px;
-    }
   }
 }
 
@@ -154,13 +149,6 @@
       grid-row: 5;
       height: 182px;
     }
-  }
-}
-
-@media(max-width: 420px){
-  img{
-    width: 48px;
-    height: 48px;
   }
 }
 
