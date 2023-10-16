@@ -5,12 +5,6 @@
 }
 
 .AnimateOff{
-  opacity: 1;
-  transform: initial;
-}
-
-
-.ScaleReset{
-  transform: initial !important;
   opacity: 1 !important;
+  transform: initial !important;
 }
