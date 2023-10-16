@@ -1,0 +1,40 @@
+.Container{
+  max-width: 1111px;
+  margin: 0 auto;
+  padding: 0px 16px;
+}
+.BookCallContainer{
+  background-color: #000;
+  border-radius: 10px;
+  color: #fff;
+  padding: 81px 95px 80px 65px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  h2{
+    margin-bottom: 25px;
+    @media (max-width: 900px){
+      font-size: 32px;
+    }
+    @media (max-width: 500px){
+      font-size: 26px;
+    }
+  }
+
+  p{
+    max-width: 42ch;
+    @media (max-width: 1000px) {
+      margin-bottom: 26px;
+    }
+  }
+
+  @media (max-width: 1000px){
+    flex-direction: column;
+    text-align: center;
+  }
+
+  @media (max-width: 500px){
+    padding: 48px 24px;
+  }
+}

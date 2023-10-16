@@ -1,0 +1,11 @@
+.FooterContainer{
+  max-width: 1110px;
+  margin: 56px auto 0px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 16px 34px;
+
+  @media(max-width: 500px){
+    margin-top: 32px;
+  }
+}

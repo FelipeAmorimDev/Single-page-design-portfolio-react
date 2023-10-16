@@ -32,8 +32,8 @@ const Slide = () => {
     slideBoardRef.current.style.animation = "";
 
     intervalRef.current = setInterval(() => {
-      slideBoardRef.current.style.animation = "slideAnimation .6s";
-    }, 50);
+      slideBoardRef.current.style.animation = "slideAnimation .3s";
+    }, 5);
 
     return () => {
       clearInterval(intervalRef);
