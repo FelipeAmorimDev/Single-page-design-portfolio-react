@@ -13,6 +13,8 @@ import photo4 from "../../assets/image-slide-4.jpg";
 import photo5 from "../../assets/image-slide-5.jpg";
 
 const Slide = () => {
+  const [currentIndex, setCurrentIndex] = React.useState(2);
+
   const photos = [
     [photo1, "Photo 1"],
     [photo2, "Photo 2"],
@@ -21,24 +23,8 @@ const Slide = () => {
     [photo5, "Photo 5"],
   ];
 
-  const [currentIndex, setCurrentIndex] = React.useState(2);
-  const slideBoardRef = React.useRef();
-  const intervalRef = React.useRef();
-
   const previousIndex = (currentIndex - 1 + photos.length) % photos.length;
   const nextIndex = (currentIndex + 1) % photos.length;
-
-  React.useEffect(() => {
-    slideBoardRef.current.style.animation = "";
-
-    intervalRef.current = setInterval(() => {
-      slideBoardRef.current.style.animation = "slideAnimation .3s";
-    }, 5);
-
-    return () => {
-      clearInterval(intervalRef);
-    };
-  }, [currentIndex]);
 
   const nextPhoto = () => {
     const nextIndex = (currentIndex + 1) % photos.length;
@@ -52,7 +38,7 @@ const Slide = () => {
 
   return (
     <div className={style.SlideContainer}>
-      <ul className={style.SlidePhotos} ref={slideBoardRef}>
+      <ul className={style.SlidePhotos}>
         <li>
           <img src={photos[previousIndex][0]} alt={photos[previousIndex][1]} />
         </li>

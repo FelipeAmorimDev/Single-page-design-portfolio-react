@@ -1,0 +1,16 @@
+.Animate{
+  opacity: 0;
+  transform: translateX(-200px);
+  transition: .5s;
+}
+
+.AnimateOff{
+  opacity: 1;
+  transform: initial;
+}
+
+
+.ScaleReset{
+  transform: initial !important;
+  opacity: 1 !important;
+}
