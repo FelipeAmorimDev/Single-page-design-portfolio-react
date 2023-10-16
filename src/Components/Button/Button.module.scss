@@ -37,3 +37,19 @@
     font-size: 14px;
   }
 }
+
+.SlideButton{
+  width: 64px;
+  height: 64px;
+  background-color: #000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  cursor: pointer;
+  transition: .3s;
+  &:hover{
+    background-color: $color-1;
+  }
+}

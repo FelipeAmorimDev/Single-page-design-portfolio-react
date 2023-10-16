@@ -1,0 +1,31 @@
+.SlideContainer {
+  overflow: hidden;
+  margin-bottom: 88px;
+
+  .SlidePhotos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 56px;
+    img {
+      border-radius: 10px;
+      min-width: 540px;
+
+      @media (max-width:700px){
+        min-width: 270px;
+        min-height: 180px;
+      }
+    }
+
+    @media (max-width:700px){
+      gap: 15px;
+      margin-bottom: 32px;
+    }
+  }
+
+  nav {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+  }
+}

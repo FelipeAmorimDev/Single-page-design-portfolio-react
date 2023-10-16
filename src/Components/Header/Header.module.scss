@@ -3,7 +3,11 @@
 .HeaderContainer {
   max-width: 1111px;
   margin: 0 auto;
-  padding: 34px 0px 136px;
+  padding: 34px 16px 136px;
+
+  @media (max-width:800px){
+    padding-bottom: 100px;
+  }
 }
 
 .HeaderTop {
