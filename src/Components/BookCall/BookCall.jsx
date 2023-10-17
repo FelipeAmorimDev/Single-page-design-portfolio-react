@@ -17,7 +17,7 @@ const BookCall = () => {
             Then we can move forward from there.
           </p>
         </div>
-        <Button value="Free Consultation" classN="ButtonSecondary"/>
+        <Button value="Free Consultation" classN="ButtonSecondary" />
       </div>
     </section>
   );

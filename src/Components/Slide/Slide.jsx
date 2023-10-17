@@ -19,7 +19,7 @@ const Slide = () => {
     slideBoardRef.current.style.animation = "";
     setTimeout(() => {
       slideBoardRef.current.style.animation = "slideAnimation .6s";
-    }, 5)
+    }, 5);
   }, [currentIndex]);
 
   const photos = [

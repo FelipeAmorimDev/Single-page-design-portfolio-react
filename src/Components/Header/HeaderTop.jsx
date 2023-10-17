@@ -7,7 +7,7 @@ const HeaderTop = () => {
   return (
     <div className={style.HeaderTop}>
       <Logo />
-      <Button value="Free Consultation" classN="ButtonPrimary"/>
+      <Button value="Free Consultation" classN="ButtonPrimary" />
     </div>
   );
 };

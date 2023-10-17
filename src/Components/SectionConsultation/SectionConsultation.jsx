@@ -37,7 +37,10 @@ const SectionConsultation = () => {
   }, [elementosRefs]);
 
   return (
-    <section className={style.ConsultationContainer} aria-labelledby="consultation__title">
+    <section
+      className={style.ConsultationContainer}
+      aria-labelledby="consultation__title"
+    >
       <img src={hero} alt="a woman" ref={adicionarRef} />
       <div ref={adicionarRef} className="Animate">
         <h2 className={styleF.fontM} id="consultation__title">
@@ -48,7 +51,7 @@ const SectionConsultation = () => {
           designed everything from brand illustrations to complete mobile apps.
           I’m also handy with a camera!
         </p>
-        <Button value="Free Consultation" classN={"ButtonSecondary"}/>
+        <Button value="Free Consultation" classN={"ButtonSecondary"} />
       </div>
     </section>
   );
