@@ -1,56 +1,68 @@
-@import '../variables';
+@import "../variables";
 
-.ConsultationContainer{
+.ConsultationContainer {
   max-width: 1111px;
   margin: 0 auto 88px;
   padding: 0px 16px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  img{
-    width: 445px;
-    height: 445px;
-    opacity: 0;
-    transform: scale(.5);
-    transition: .6s;
-    @media (max-width: 950px){
-      width: 364px;
-      height: 364px;
+  div {
+    @media (max-width: 1115px) {
+      justify-self: end;
     }
-    @media(max-width: 830px){
-      margin-left: -60px;
+    @media (max-width: 767px){
+      justify-self: initial;
     }
-    @media (max-width:770px){
-      margin-left: 0px;
-      width: 300px;
-      height: 300px;
-    }
-  }
-  h2{
-    margin-bottom: 34px;
-    @media (max-width: 1110px){
-      font-size: 32px;
-      max-width: 18ch;
-    }
-    @media (max-width: 830px){
-      max-width: 14ch;
-    }
-    @media (max-width:770px){
-      font-size: 26px;
-      max-width: 18ch;
-      margin: 40px auto 24px;
-    }
-  }
-  p{
-    color: $color-8;
-    margin-bottom: 32px;
   }
 
-  @media (max-width:770px){
+   img{
+      width: 445px;
+      height: 445px;
+      opacity: 0;
+      transform: scale(.5);
+      transition: .6s;
+      @media (max-width: 950px){
+        width: 364px;
+        height: 364px;
+      }
+      @media(max-width: 830px){
+        margin-left: -60px;
+      }
+      @media (max-width:770px){
+        margin-left: 0px;
+        width: 300px;
+        height: 300px;
+      }
+    }
+    h2{
+      margin-bottom: 34px;
+      max-width: 22ch;
+      @media (max-width: 1110px){
+        font-size: 32px;
+        max-width: 18ch;
+      }
+      @media (max-width:767px){
+        font-size: 26px;
+        max-width: 22ch;
+        margin: 40px auto 24px;
+      }
+    }
+    p{
+      color: $color-8;
+      margin-bottom: 32px;
+      max-width: 50ch;
+      @media (max-width:1115px){
+        max-width: 38ch;
+      }
+      @media (max-width:800px){
+        max-width: 32ch;
+      }
+    }
+
+  @media (max-width: 767px) {
     grid-template-columns: 1fr;
     justify-items: center;
     text-align: center;
   }
-   
 }
-
