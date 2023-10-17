@@ -37,10 +37,10 @@ const SectionConsultation = () => {
   }, [elementosRefs]);
 
   return (
-    <section className={style.ConsultationContainer}>
+    <section className={style.ConsultationContainer} aria-labelledby="consultation__title">
       <img src={hero} alt="a woman" ref={adicionarRef} />
       <div ref={adicionarRef} className="Animate">
-        <h2 className={styleF.fontM}>
+        <h2 className={styleF.fontM} id="consultation__title">
           I’m Amy, and I’d love to work on your next project
         </h2>
         <p className={styleF.fontB}>
@@ -48,7 +48,7 @@ const SectionConsultation = () => {
           designed everything from brand illustrations to complete mobile apps.
           I’m also handy with a camera!
         </p>
-        <Button value="Free Consultation" classN={"ButtonSecondary"} />
+        <Button value="Free Consultation" classN={"ButtonSecondary"}/>
       </div>
     </section>
   );

@@ -1,9 +1,11 @@
-import style from './Button.module.scss'
+import style from "./Button.module.scss";
 
-const Button = ({value, classN}) => {
+const Button = ({ value, classN }) => {
   return (
-    <button className={style[classN]}>{value}</button>
-  )
-}
+    <button className={style[classN]}>
+      {value}
+    </button>
+  );
+};
 
-export default Button
+export default Button;

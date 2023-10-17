@@ -9,8 +9,8 @@ const Portfolio = () => {
   
 
   return (
-    <section className={style.PortFolioContainer}>
-      <h2 className={styleT.fontS}>My Work</h2>
+    <section className={style.PortFolioContainer} aria-labelledby="portfolio__title">
+      <h2 className={styleT.fontS} id="portfolio__title">My Work</h2>
       <Slide />
     </section>
   );

@@ -4,7 +4,7 @@ import HeaderDescription from "./HeaderDescription";
 
 const Header = () => {
   return (
-    <header className={style.HeaderContainer}>
+    <header className={style.HeaderContainer} aria-label="Header">
       <HeaderTop />
       <HeaderDescription />
     </header>

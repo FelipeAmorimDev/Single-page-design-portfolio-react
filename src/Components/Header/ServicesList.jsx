@@ -9,29 +9,29 @@ import motionGraphics from "../../assets/pattern-motion-graphics.svg";
 
 const ServicesList = () => {
   return (
-    <ul className={style.ServicesList}>
+    <ul className={style.ServicesList} aria-label="Services List">
       <li className={`${style.ServiceItem} ${style.GraphicDesign}`}>
-        <img src={graphicDesigner} alt="Graphic Design" />
+        <img src={graphicDesigner} alt="Pattern Graphic Design" />
         <h2>Graphic Design</h2>
       </li>
       <li className={`${style.ServiceItem} ${style.UiUx}`}>
-        <img src={uiUx} alt="UI/UX" />
+        <img src={uiUx} alt="Pattern UI/UX" />
         <h2>UI/UX</h2>
       </li>
       <li className={`${style.ServiceItem} ${style.Apps}`}>
-        <img src={appImg} alt="Apps" />
+        <img src={appImg} alt="Pattern Apps" />
         <h2>Apps</h2>
       </li>
       <li className={`${style.ServiceItem} ${style.Photography}`}>
-        <img src={photography} alt="Photography" />
+        <img src={photography} alt="Pattern Photography" />
         <h2>Photography</h2>
       </li>
       <li className={`${style.ServiceItem} ${style.Ilustration}`}>
-        <img src={ilustrations} alt="Illustrations" />
+        <img src={ilustrations} alt="Pattern Illustrations" />
         <h2>Illustrations</h2>
       </li>
       <li className={`${style.ServiceItem} ${style.MotionGraphic}`}>
-        <img src={motionGraphics} alt="Motion Graphics" />
+        <img src={motionGraphics} alt="Pattern Motion Graphics" />
         <h2>Motion Graphics</h2>
       </li>
     </ul>

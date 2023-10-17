@@ -57,10 +57,10 @@ const Slide = () => {
         </li>
       </ul>
       <nav>
-        <SlideButton handleClick={previusPhoto}>
+        <SlideButton handleClick={previusPhoto} aria="Previous Photo Button">
           <IconLeft />
         </SlideButton>
-        <SlideButton handleClick={nextPhoto}>
+        <SlideButton handleClick={nextPhoto} aria="Next Photo Button">
           <IconRight />
         </SlideButton>
       </nav>
