@@ -15,26 +15,26 @@ const SectionConsultation = () => {
     }
   };
 
-  React.useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        Array.from(entries).forEach((entry) => {
-          if (entry.intersectionRatio >= 0.5) {
-            entry.target.classList.add("AnimateOff");
+  // React.useEffect(() => {
+  //   const observer = new IntersectionObserver(
+  //     (entries) => {
+  //       Array.from(entries).forEach((entry) => {
+  //         if (entry.intersectionRatio >= 0.5) {
+  //           entry.target.classList.add("AnimateOff");
 
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      {
-        threshold: 0.5,
-      }
-    );
+  //           observer.unobserve(entry.target);
+  //         }
+  //       });
+  //     },
+  //     {
+  //       threshold: 0.5,
+  //     }
+  //   );
 
-    elementosRefs.forEach((element) => {
-      observer.observe(element);
-    });
-  }, [elementosRefs]);
+  //   elementosRefs.forEach((element) => {
+  //     observer.observe(element);
+  //   });
+  // }, [elementosRefs]);
 
   return (
     <section
