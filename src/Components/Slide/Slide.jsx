@@ -34,6 +34,27 @@ const Slide = () => {
     }, 5);
   }, [currentIndex]);
 
+  React.useEffect(() => {
+    const listenerCallback = (event) => {
+      const keyPressed = event.key;
+
+      if (keyPressed === "ArrowRight") {
+        const nextIndex = (currentIndex + 1) % photos.length;
+        setCurrentIndex(nextIndex);
+      } else if (keyPressed === "ArrowLeft") {
+        const previousIndex =
+          (currentIndex - 1 + photos.length) % photos.length;
+        setCurrentIndex(previousIndex);
+      }
+    };
+
+    window.addEventListener("keyup", listenerCallback);
+
+    return () => {
+      window.removeEventListener("keyup", listenerCallback);
+    };
+  });
+
   const nextPhoto = () => {
     const nextIndex = (currentIndex + 1) % photos.length;
     setCurrentIndex(nextIndex);
