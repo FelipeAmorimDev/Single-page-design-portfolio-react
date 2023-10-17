@@ -9,7 +9,7 @@ import motionGraphics from "../../assets/pattern-motion-graphics.svg";
 
 const ServicesList = () => {
   return (
-    <ul className={style.ServicesList} aria-label="Services List">
+    <ul className={style.ServicesList}>
       <li className={`${style.ServiceItem} ${style.GraphicDesign}`}>
         <img src={graphicDesigner} alt="Pattern Graphic Design" />
         <h2>Graphic Design</h2>
