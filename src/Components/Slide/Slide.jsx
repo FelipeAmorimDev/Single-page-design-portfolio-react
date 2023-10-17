@@ -17,13 +17,9 @@ const Slide = () => {
   const slideBoardRef = React.useRef();
   React.useEffect(() => {
     slideBoardRef.current.style.animation = "";
-    const timeout = setTimeout(() => {
-      slideBoardRef.current.style.animation = "slideAnimation .3s";
-    }, 5);
-
-    return () => {
-      clearTimeout(timeout);
-    };
+    setTimeout(() => {
+      slideBoardRef.current.style.animation = "slideAnimation .6s";
+    }, 5)
   }, [currentIndex]);
 
   const photos = [
