@@ -15,12 +15,6 @@ import photo5 from "../../assets/image-slide-5.jpg";
 const Slide = () => {
   const [currentIndex, setCurrentIndex] = React.useState(2);
   const slideBoardRef = React.useRef();
-  React.useEffect(() => {
-    slideBoardRef.current.style.animation = "";
-    setTimeout(() => {
-      slideBoardRef.current.style.animation = "slideAnimation .6s";
-    }, 5);
-  }, [currentIndex]);
 
   const photos = [
     [photo1, "Photo 1"],
@@ -32,6 +26,13 @@ const Slide = () => {
 
   const previousIndex = (currentIndex - 1 + photos.length) % photos.length;
   const nextIndex = (currentIndex + 1) % photos.length;
+
+  React.useEffect(() => {
+    slideBoardRef.current.style.animation = "";
+    setTimeout(() => {
+      slideBoardRef.current.style.animation = "slideAnimation .6s";
+    }, 5);
+  }, [currentIndex]);
 
   const nextPhoto = () => {
     const nextIndex = (currentIndex + 1) % photos.length;
