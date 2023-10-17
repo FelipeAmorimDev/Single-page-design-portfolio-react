@@ -14,6 +14,17 @@ import photo5 from "../../assets/image-slide-5.jpg";
 
 const Slide = () => {
   const [currentIndex, setCurrentIndex] = React.useState(2);
+  const slideBoardRef = React.useRef();
+  React.useEffect(() => {
+    slideBoardRef.current.style.animation = "";
+    const timeout = setTimeout(() => {
+      slideBoardRef.current.style.animation = "slideAnimation .3s";
+    }, 5);
+
+    return () => {
+      clearTimeout(timeout);
+    };
+  }, [currentIndex]);
 
   const photos = [
     [photo1, "Photo 1"],
@@ -38,7 +49,7 @@ const Slide = () => {
 
   return (
     <div className={style.SlideContainer}>
-      <ul className={style.SlidePhotos}>
+      <ul className={style.SlidePhotos} ref={slideBoardRef}>
         <li>
           <img src={photos[previousIndex][0]} alt={photos[previousIndex][1]} />
         </li>
