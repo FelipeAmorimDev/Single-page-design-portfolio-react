@@ -42,7 +42,7 @@ const SectionConsultation = () => {
       aria-labelledby="consultation__title"
     >
       <img src={hero} alt="a woman" ref={adicionarRef} />
-      <div ref={adicionarRef} className="Animate">
+      <div ref={adicionarRef}>
         <h2 className={styleF.fontM} id="consultation__title">
           I’m Amy, and I’d love to work on your next project
         </h2>
