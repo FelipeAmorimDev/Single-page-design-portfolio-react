@@ -15,26 +15,26 @@ const SectionConsultation = () => {
     }
   };
 
-  // React.useEffect(() => {
-  //   const observer = new IntersectionObserver(
-  //     (entries) => {
-  //       Array.from(entries).forEach((entry) => {
-  //         if (entry.intersectionRatio >= 0.5) {
-  //           entry.target.classList.add("AnimateOff");
+  React.useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        Array.from(entries).forEach((entry) => {
+          if (entry.intersectionRatio >= 0.5) {
+            entry.target.classList.add("AnimateOff");
 
-  //           observer.unobserve(entry.target);
-  //         }
-  //       });
-  //     },
-  //     {
-  //       threshold: 0.5,
-  //     }
-  //   );
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        threshold: 0.5,
+      }
+    );
 
-  //   elementosRefs.forEach((element) => {
-  //     observer.observe(element);
-  //   });
-  // }, [elementosRefs]);
+    elementosRefs.forEach((element) => {
+      observer.observe(element);
+    });
+  }, [elementosRefs]);
 
   return (
     <section
@@ -42,7 +42,7 @@ const SectionConsultation = () => {
       aria-labelledby="consultation__title"
     >
       <img src={hero} alt="a woman" ref={adicionarRef} />
-      <div ref={adicionarRef}>
+      <div ref={adicionarRef} className="Animate">
         <h2 className={styleF.fontM} id="consultation__title">
           I’m Amy, and I’d love to work on your next project
         </h2>
